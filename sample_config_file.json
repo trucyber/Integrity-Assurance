@@ -1,0 +1,90 @@
+{"plantID" : "FFP1",
+	"PP": [{
+			"processID" : "CE"
+			"devices" : [{
+					"deviceID" : "1402"
+					"state" : [00, 01, 10, 11]
+					"dependency" : [
+						{
+							"prvEvent" : 00,
+							"nxtEvent" : 01
+						},
+						..
+					]
+				},
+				...
+				{
+					"deviceID" : "1409"
+					"state" : [00, 01, 10, 11]
+					"dependency" : [
+						{
+							"prvEvent" : 00,
+							"nxtEvent" : 01
+						},
+						...
+					]
+				},
+			]
+			"state" : [000, 0001, 0010, 0011, ...]
+			"dependency" : [{
+					"prvEvent" : 000,
+					"nxtEvent" : 001
+				},
+				...
+				{
+					"prvEvent" : 000,
+					"nxtEvent" : 010
+				}
+			]
+		},{
+			"processID" : "WT"
+			"devices" : [{
+					"deviceID" : "1412"
+					"state" : [00, 01, 10, 11]
+					"dependency" : [{
+							"prvEvent" : 00,
+							"nxtEvent" : 01
+						},
+						..
+					]
+				},
+				...
+				{
+					"deviceID" : "1419"
+					"state" : [00, 01, 10, 11]
+					"dependency" : [{
+							"prvEvent" : 00,
+							"nxtEvent" : 01
+						},
+						..
+					]
+				},
+			]
+			"state" : [000, 0001, 0010, 0011, ...]
+			"dependency" : [{
+					"prvEvent" : 000,
+					"nxtEvent" : 001
+				},
+				...
+				{
+					"prvEvent" : 000,
+					"nxtEvent" : 010
+				}
+			]
+		},
+	],
+	"states" : [00, 01, 10, 11],
+	"dependency" : [{
+			"prvEvent" : 00,
+			"nxtEvent" : 01
+		},
+		{
+			"prvEvent" : 01,
+			"nxtEvent" : 10
+		},
+		{
+			"prvEvent" : 00,
+			"nxtEvent" : 10
+		}
+	]
+}
