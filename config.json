@@ -1,0 +1,42 @@
+{
+    "processID": "CE",
+    "device": [
+        {
+            "deviceID": "01",
+            "state": "active",
+            "prvState": "noactive",
+            "message": ["su", "cc", "du", "da", "pd", "ss"],
+            "event": ["su", "cc", "du", "da", "pd", "ss"]
+        },
+        {
+            "deviceID": "02",
+            "state": "active",
+            "prvState": "noactive",
+            "message": ["su", "cc", "du", "da", "pd", "ss"],
+            "event": ["su", "cc", "du", "da", "pd", "ss"]
+        }
+    ],
+    "message": ["su", "cc", "du", "da", "pd", "ss"],
+    "dependency": [
+        {
+            "prvEvent": "3",
+            "nxtEvent" : "C3"
+        },
+        {
+            "prvEvent": "E3",
+            "nxtEvent" : "E4"
+        },
+        {
+            "prvEvent": "E3",
+            "nxtEvent" : "E4"
+        },
+        {
+            "prvEvent": "3",
+            "nxtEvent" : "D3"
+        },
+        {
+            "prvEvent": "D3",
+            "nxtEvent" : "D4"
+        }
+    ]
+}
